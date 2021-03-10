@@ -1,0 +1,45 @@
+// Font-size
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700;1,900&display=swap');
+// grid
+@import '../../../node_modules/bootstrap-4-grid/css/grid.min.css';
+
+@import '_colors.scss';
+
+html {
+  font-family:Arial, Helvetica, sans-serif, 'Lato';
+  background-color: $background;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 45px;
+  font-weight: 700;
+}
+h2 {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+  &.white {
+    color: $white;
+  }
+}
+h3 {
+  color: $secondary;
+  font-weight: bold;
+}
+p {
+  font-size: 16px;
+  span {
+    color: $secondary;
+  }
+  &.bold {
+    font-weight: bold;
+  }
+  &.small {
+    font-size: 14px;
+  }
+}
