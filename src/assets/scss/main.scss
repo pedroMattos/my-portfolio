@@ -4,6 +4,7 @@
 @import '../../../node_modules/bootstrap-4-grid/css/grid.min.css';
 
 @import '_colors.scss';
+@import './mixins/box-shadow.scss';
 
 html {
   font-family:Arial, Helvetica, sans-serif, 'Lato';
@@ -55,4 +56,6 @@ p {
 
 // import components styles below this line
 @import './header/banner.scss';
+@import './header/avatar.scss';
+@import './mixins/box-shadow.scss';
 @import './various/line.scss';
