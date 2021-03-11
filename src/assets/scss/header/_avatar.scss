@@ -1,0 +1,42 @@
+$hoverEasing: cubic-bezier(0.23, 1, 0.32, 1);
+$returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
+.avatar-wrapper {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  left: 0;
+  bottom: -100px;
+  .external-circle {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    border: 1px solid $secondary;
+    background-color: $white;
+    border-radius: 50%;
+    @include box-shadow;
+    transition-duration: .5s;
+    &:hover {
+      transition-duration: .5s;
+      @include box-shadow-hover;
+    }
+    .internal-circle {
+      margin: auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 230px;
+      height: 230px;
+      border: 1px solid $secondary;
+      background-color: $white;
+      border-radius: 50%;
+      p {
+        margin: 10px 0 10px 0;
+        img {
+          width: 210px;
+          height: 210px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
