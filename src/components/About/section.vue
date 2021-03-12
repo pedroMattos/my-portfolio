@@ -1,5 +1,5 @@
 <template>
-  <div class="container section">
+  <section class="container">
     <h2 class="centralizer no-bottom-m">About me</h2>
     <div class="lines section-width"></div>
     <br><br>
@@ -14,7 +14,7 @@
           <personal-details></personal-details>
         </div>
       </div>
-  </div>
+  </section>
 </template>
 
 <script>
