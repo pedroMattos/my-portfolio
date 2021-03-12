@@ -3,6 +3,9 @@
   width: 440px;
   height: 10px;
   margin: auto;
+  &.section-width {
+    width: 200px;
+  }
   &::after {
     content: '';
     position: absolute;
