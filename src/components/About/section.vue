@@ -13,17 +13,22 @@
         <div class="col-sm-12 col-md-6">
           <personal-details></personal-details>
         </div>
+        <div class="col-sm-12 col-md-6">
+          <my-interests></my-interests>
+        </div>
       </div>
   </section>
 </template>
 
 <script>
 import peronalDetails from './personalDetails.vue';
+import myInterests from './myInterests.vue';
 
 export default {
   name: 'section-about',
   components: {
     'personal-details': peronalDetails,
+    'my-interests': myInterests
   },
 }
 </script>
