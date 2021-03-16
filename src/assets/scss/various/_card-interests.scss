@@ -1,0 +1,21 @@
+.card-interests {
+  background-color: $grey-dark;
+  height: 70px;
+  width: 70px;
+  border-radius: 4px;
+  color: $white;
+  @include box-shadow;
+  transition-duration: .5s;
+  &:hover {
+    transition-duration: .5s;
+    cursor: pointer;
+    @include box-shadow-hover;
+  }
+  p {
+    margin: 0;
+  }
+  svg {
+    fill: $white;
+    width: 60%;
+  }
+}
