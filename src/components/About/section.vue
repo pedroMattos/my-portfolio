@@ -17,18 +17,27 @@
           <my-interests></my-interests>
         </div>
       </div>
+      <br><br><br>
+      <div class="row">
+        <div class="col-sm-12">
+          <btn-cta></btn-cta>
+        </div>
+      </div>
+      <br><br>
   </section>
 </template>
 
 <script>
 import peronalDetails from './personalDetails.vue';
 import myInterests from './myInterests.vue';
+import btnCta from '../../assets/cta/btnCta';
 
 export default {
   name: 'section-about',
   components: {
     'personal-details': peronalDetails,
-    'my-interests': myInterests
+    'my-interests': myInterests,
+    'btn-cta': btnCta,
   },
 }
 </script>
