@@ -22,4 +22,31 @@
     right: 0;
     z-index: 2;
   }
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: 2px;
+    background-color: $secondary;
+    bottom: 1px;
+  }
+  &.center {
+    .text-banner {
+      position: absolute;
+      top: 50px;
+      left: 0;
+      right: 0;
+      z-index: 2;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      right: 0;
+      left: 0;
+      height: 2px;
+      background-color: $secondary;
+      top: -2px;
+    }
+  }
 }
