@@ -1,0 +1,98 @@
+.button-cta {
+  background-color: transparent;
+  height: 50px;
+  width: 200px;
+  border: 1px solid $secondary;
+  margin: auto;
+  cursor: pointer;
+  transition-duration: .5s;
+  position: relative;
+  &.out {
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      background-color: $secondary;
+      animation: btnOut .3s;
+      z-index: -1;
+    }
+    p {
+      color: $secondary;
+    }
+  }
+  &.enter {
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0%;
+      background-color: $secondary;
+      z-index: -1;
+    }
+    p {
+      color: $secondary;
+    }
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    background-color: $secondary;
+  }
+  &:hover {
+    transition-duration: .5s;
+    p {
+      color: $white;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      background-color: $secondary;
+      animation: btnMove .5s;
+      transition-delay: .5s;
+      right: 0%;
+      z-index: -1;
+    }
+  }
+  p {
+    color: $secondary;
+  }
+}
+
+@keyframes btnMove {
+  0% {right: 100%}
+  10% {right: 90%}
+  20% {right: 80%}
+  30% {right: 70%}
+  40% {right: 60%}
+  50% {right: 50%}
+  60% {right: 40%;}
+  70% {right: 30%}
+  80% {right: 20%}
+  90% {right: 10%}
+  100% {right: 0%}
+}
+
+@keyframes btnOut {
+  0% {right: 0%}
+  10% {right: 10%}
+  20% {right: 20%}
+  30% {right: 30%}
+  40% {right: 40%}
+  50% {right: 50%}
+  60% {right: 60%;}
+  70% {right: 70%}
+  80% {right: 80%}
+  90% {right: 90%}
+  100% {right: 100%}
+}
