@@ -1,7 +1,7 @@
 <template>
   <div class="button-cta">
     <p class="centralizer">
-      Download Cv
+      Download CV
     </p>
   </div>
 </template>
