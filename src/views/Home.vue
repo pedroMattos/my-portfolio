@@ -3,6 +3,7 @@
     <banner-header></banner-header>
     <about-section></about-section>
     <skills-section></skills-section>
+    <history-section></history-section>
   </div>
 </template>
 
@@ -10,13 +11,15 @@
 import banner from '../components/header/banner.vue';
 import aboutSection from '../components/About/section.vue'
 import skillsSection from '../components/Skills/section.vue'
+import historySection from '../components/History/section.vue'
 
 export default {
   name: 'home',
   components: {
     'banner-header': banner,
     'about-section': aboutSection,
-    'skills-section': skillsSection
+    'skills-section': skillsSection,
+    'history-section': historySection
   },
 };
 </script>
