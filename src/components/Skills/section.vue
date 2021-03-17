@@ -5,12 +5,14 @@
       <div class="lines section-width"></div>
     </div>
     <div id="skills-graphics">
-      <div class="row">
-        <div class="col-sm-12 col-md-6">
-          <front-skills></front-skills>
-        </div>
-        <div class="col-sm-12 col-md-6">
-          <back-skills></back-skills>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <front-skills></front-skills>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <back-skills></back-skills>
+          </div>
         </div>
       </div>
     </div>
