@@ -1,6 +1,8 @@
 section {
   margin-top: 150px;
-
+  &.no-margin-tp {
+    margin-top: 100px;
+  }
   #job-status {
     margin-block-start: 0;
     margin-block-end: 0;
