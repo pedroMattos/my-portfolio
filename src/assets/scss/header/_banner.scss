@@ -32,6 +32,11 @@
     bottom: 1px;
   }
   &.center {
+    img {
+      height: 630px;
+      width: 100%;
+      object-fit: cover;
+    }
     .text-banner {
       position: absolute;
       top: 50px;
