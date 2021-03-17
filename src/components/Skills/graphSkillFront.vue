@@ -44,7 +44,7 @@ export default {
             },
           },
           indicator: [
-            { name: "HTML5", max: 100 },
+            { name: "Web Scrapping", max: 100 },
             { name: "CSS/SCSS", max: 100 },
             { name: "JavaScript", max: 100 },
             { name: "UI/UX", max: 100 },
