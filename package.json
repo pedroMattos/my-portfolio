@@ -10,7 +10,9 @@
   "dependencies": {
     "bootstrap-4-grid": "^3.4.0",
     "core-js": "^3.6.5",
+    "echarts": "^5.0.2",
     "vue": "^3.0.0",
+    "vue-echarts": "^6.0.0-rc.3",
     "vue-router": "^4.0.0-0",
     "vuex": "^4.0.0-0"
   },
@@ -21,6 +23,7 @@
     "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0",
+    "@vue/composition-api": "^1.0.0-rc.5",
     "@vue/eslint-config-airbnb": "^5.0.2",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
