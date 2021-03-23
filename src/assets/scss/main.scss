@@ -60,6 +60,9 @@ p {
 .centralizer {
   text-align: center;
 }
+.right {
+  text-align: right;
+}
 
 // import components styles below this line
 @import './header/banner.scss';
@@ -68,4 +71,5 @@ p {
 @import './mixins/box-shadow.scss';
 @import './various/line.scss';
 @import './various/card-interests.scss';
+@import './various/card-history.scss';
 @import './various/btn-cta.scss';
