@@ -1,0 +1,32 @@
+.card-history {
+  .history-title {
+    font-weight: 700;
+    color: $secondary;
+    span {
+      font-weight: 700;
+      font-size: 12px;
+      color: black;
+    }
+  }
+  .history-content {
+    p {
+      font-size: 14px;
+    }
+  }
+}
+.right-border {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    width: 1px;
+  }
+  &.grey {
+    &::after {
+      background-color: grey;
+    }
+  }
+}
