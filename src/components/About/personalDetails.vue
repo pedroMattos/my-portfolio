@@ -15,10 +15,10 @@
         <ul id="job-status">
           <li class="freelancer">
             Freelancer
-            <m-tooltip msg="Freelancer"></m-tooltip>
+            <m-tooltip msg="Freelancer" position="bottom"></m-tooltip>
           </li>
           <li class="ime">IME
-            <m-tooltip msg="IME"></m-tooltip>
+            <m-tooltip msg="IME" position="bottom"></m-tooltip>
           </li>
         </ul>
       </div>
