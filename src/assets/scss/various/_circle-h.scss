@@ -1,0 +1,17 @@
+.col-circle {
+  position: relative;
+  .circle {
+    position: absolute;
+    top: 40px;
+    left: -15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #9E9E9E;
+    padding: 4px;
+    svg {
+      fill: #9E9E9E;
+    }
+  }
+}
