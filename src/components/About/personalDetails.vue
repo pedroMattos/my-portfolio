@@ -13,8 +13,13 @@
         <p class="small">laranjeiraspedro@gmail.com</p>
         <p class="small">Salvador, BA - Brazil</p>
         <ul id="job-status">
-          <li class="freelancer">Freelancer</li>
-          <li class="ime">IME</li>
+          <li class="freelancer">
+            Freelancer
+            <m-tooltip msg="Freelancer"></m-tooltip>
+          </li>
+          <li class="ime">IME
+            <m-tooltip msg="IME"></m-tooltip>
+          </li>
         </ul>
       </div>
     </div>
@@ -22,7 +27,11 @@
 </template>
 
 <script>
+import tooltipVue from '../pieces/tooltip.vue'
 export default {
   name: 'personal-details',
+  components: {
+    'm-tooltip': tooltipVue
+  }
 }
 </script>
