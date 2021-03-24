@@ -1,5 +1,5 @@
 <template>
-  <div class="tooltip-content">
+  <div :class="['tooltip-content', positionFiltred]">
     <p class="centralizer">{{ mensagem }}</p>
   </div>
 </template>
@@ -7,10 +7,11 @@
 <script>
 export default {
   name: 'my-tooltip',
-  props: ['msg'],
+  props: ['msg', 'position'],
   data() {
     return {
-      mensagem: null
+      mensagem: null,
+      positionFiltred: '',
     }
   },
   mounted() {
@@ -20,6 +21,24 @@ export default {
       tp.parentNode.setAttribute('style', 'position:relative')
       tp.parentNode.classList.add('hovered')
     });
+
+    switch (this.position) {
+      case 'right':
+        this.positionFiltred = this.position
+        break;
+      case 'left':
+        this.positionFiltred = this.position
+        break;
+      case 'top':
+        this.positionFiltred = this.position
+        break;
+      case 'bottom':
+        this.positionFiltred = this.position
+        break;
+      default:
+        this.positionFiltred = ''
+        break;
+    }
   },
 }
 </script>
@@ -33,30 +52,58 @@ export default {
     }
   }
 .tooltip-content {
-  position: absolute;
-  display: none;
-  background-color: black;
-  bottom: -30px;
-  left: 0;
-  padding: 4px 6px;
-  border-radius: 4px;
-  &::after {
+  &.bottom {
     position: absolute;
-    content: '';
-    width: 0;
-    height: 0;
-    border-top: 5px solid transparent;
-    border-left: 5px solid transparent;
-    border-bottom: 5px solid black;
-    border-right: 5px solid transparent;
-    bottom: 20px;
-    // top: 0;
-    // right: 0;
-    left: 5px;
+    display: none;
+    background-color: black;
+    bottom: -30px;
+    left: 0;
+    padding: 4px 6px;
+    border-radius: 4px;
+    &::after {
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 0;
+      border-top: 5px solid transparent;
+      border-left: 5px solid transparent;
+      border-bottom: 5px solid black;
+      border-right: 5px solid transparent;
+      bottom: 20px;
+      // top: 0;
+      // right: 0;
+      left: 5px;
+    }
+  }
+  &.right {
+    position: absolute;
+    display: none;
+    background-color: black;
+    bottom: unset;
+    top: 10%;
+    left: unset;
+    right: -130px;
+    padding: 4px 6px;
+    border-radius: 4px;
+    &::after {
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 0;
+      border-top: 5px solid transparent;
+      border-left: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      border-right: 5px solid black;
+      bottom: 5px;
+      // top: 0;
+      // right: -10px;
+      left: -10px;
+    }
   }
   p {
     margin: 0;
     font-size: 11px !important;
+    color: white !important;
   }
 }
 </style>
