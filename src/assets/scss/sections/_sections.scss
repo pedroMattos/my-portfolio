@@ -3,6 +3,9 @@ section {
   &.no-margin-tp {
     margin-top: 100px;
   }
+  &.black {
+    background-color: $black-blue;
+  }
   #job-status {
     margin-block-start: 0;
     margin-block-end: 0;
