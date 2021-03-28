@@ -100,6 +100,31 @@ export default {
       left: -10px;
     }
   }
+  &.left {
+    position: absolute;
+    display: none;
+    background-color: black;
+    bottom: unset;
+    top: 10%;
+    left: -130px;
+    right: unset;
+    padding: 4px 6px;
+    border-radius: 4px;
+    &::after {
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 0;
+      border-top: 5px solid transparent;
+      border-left: 5px solid black;
+      border-bottom: 5px solid transparent;
+      border-right: 5px solid transparent;
+      bottom: 5px;
+      // top: 0;
+      right: -10px;
+      // left: -10px;
+    }
+  }
   p {
     margin: 0;
     font-size: 11px !important;
