@@ -37,7 +37,14 @@
           </div>
 
           <div class="row">
-            <div class="col-md-6 right-border"></div>
+            <div class="col-md-6 right-border col-circle">
+              <div class="circle right">
+                <div>
+                  <check-svg></check-svg>
+                  <m-tooltip msg="Jun/2019 - Jun/2020" position="left"></m-tooltip>
+                </div>
+              </div>
+            </div>
             <div class="col-md-6">
               <div class="card-history">
                 <div class="history-title">
@@ -87,7 +94,14 @@
           </div>
 
           <div class="row">
-            <div class="col-md-6 right-border"></div>
+            <div class="col-md-6 right-border col-circle">
+              <div class="circle right">
+                <div>
+                  <check-svg></check-svg>
+                  <m-tooltip msg="Jun/2019 - Jun/2020" position="left"></m-tooltip>
+                </div>
+              </div>
+            </div>
             <div class="col-md-6">
               <div class="card-history">
                 <div class="history-title">
@@ -109,6 +123,7 @@
         </div>
       </div>
     </div>
+    <br><br><br>
   </section>
 </template>
 
