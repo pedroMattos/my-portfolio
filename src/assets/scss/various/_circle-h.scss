@@ -1,6 +1,13 @@
 .col-circle {
   position: relative;
   .circle {
+    &.right {
+      top: 40px;
+      right: -15px;
+      left: unset;
+      width: 30px;
+      height: 30px;
+    }
     position: absolute;
     top: 40px;
     left: -15px;
@@ -10,6 +17,7 @@
     background-color: white;
     border: 1px solid #9E9E9E;
     padding: 4px;
+    z-index: 1;
     svg {
       fill: #9E9E9E;
     }
