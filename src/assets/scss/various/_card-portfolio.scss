@@ -1,0 +1,47 @@
+.c-portfolio {
+  .col-md-4 {
+    padding: 0;
+  }
+  .card-body {
+    overflow: hidden;
+    cursor: pointer;
+    height: 185px;
+    position: relative;
+    &:hover {
+      img {
+        transition-duration: .5s;
+        transform: scale(1.1);
+      }
+    }
+    img {
+      transition-duration: .5s;
+      height: auto !important;
+      width: 100% !important;
+      object-fit: contain;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-color: $black-blue;
+      opacity: .76;
+      z-index: 1;
+    }
+    p {
+      position: relative;
+      top: 80px;
+      z-index: 2;
+      height: 0;
+      display: block;
+      margin-block-start: 0;
+      margin-block-end: 0;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      color: $primary;
+      font-weight: 700;
+    }
+  }
+}
